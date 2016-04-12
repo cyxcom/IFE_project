@@ -12,8 +12,23 @@ var aqiData = {};
  * 从用户输入中获取数据，向aqiData中增加一条数据
  * 然后渲染aqi-list列表，增加新增的数据
  */
-function addAqiData() {
-  var city=document.getElementById("")
+function addAqiData() 
+{
+    var city = document.getElementsByName("aqi-city-input").value;
+    var index = document.getElementsByName("aqi-value-input").value;
+    
+    if(!city.match(/^[A-Za-z\u4E00-\u9FA5\uf900-\ufa2d]+$/))
+    {
+    	alert("只允许输入中英文");
+    	city="";
+    }
+    else if(!index.match(/^[0-9]+$/))
+    {
+    	alert("只允许输入数字");
+    	index="";
+    }
+    
+    aqiData[city]=index;
 }
 
 /**
