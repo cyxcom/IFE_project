@@ -13,7 +13,7 @@ var aqiData = {};
  * 然后渲染aqi-list列表，增加新增的数据
  */
 function addAqiData() {
-
+  var city=document.getElementById("")
 }
 
 /**
