@@ -53,6 +53,7 @@ function addBtnHandle() {
  */
 function delBtnHandle() {
   // do sth.
+   delete aqiData[city];
 
   renderAqiList();
 }
