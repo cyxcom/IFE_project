@@ -51,10 +51,10 @@ function addBtnHandle() {
  * 点击各个删除按钮的时候的处理逻辑
  * 获取哪个城市数据被删，删除数据，更新表格显示
  */
-function delBtnHandle() {
+function delBtnHandle(city) {
   // do sth.
 
-  renderAqiList();
+  renderAqiList(city);
 }
 
 function init() {
